@@ -9,8 +9,16 @@ import { Router } from "@angular/router";
 export class CatalogoComponent implements OnInit{
   constructor(private router: Router){}
 
-  ngOnInit(): void {
+  preciototal: any;
+  precio1:any
+  total: number=0
 
+  ngOnInit(): void {
+    localStorage.clear()
+  }
+
+  agregar1(){
+    this.preciototal=this.preciototal+this.precio1;
   }
 
   logout(){

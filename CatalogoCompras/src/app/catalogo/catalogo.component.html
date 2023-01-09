@@ -1,4 +1,14 @@
 <header>
   <button (click)="factura()" >Generar Factura</button>
   <button (click)="logout()" >Cerrar Sesion</button>
+  <p [(ngModel)]="preciototal">0</p>
+  <button (click)="factura()">Generar Factura</button>
 </header>
+<div>
+  <p><img src="https://tiaecuador.vtexassets.com/arquivos/ids/198445/135295000B.png?v=637923097494930000" width="25%"></p>
+  <p>Audifonos con Microfono negros Onikuma K5</p>
+  <p [(ngModel)]="precio1">150</p>
+  <button (click)="agregar1()">Agregar al Carrito</button>
+
+</div>
+
