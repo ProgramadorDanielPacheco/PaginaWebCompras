@@ -1,14 +1,32 @@
-<header>
+<header style="background-color: red;">
   <button (click)="factura()" >Generar Factura</button>
   <button (click)="logout()" >Cerrar Sesion</button>
   <p [(ngModel)]="preciototal">0</p>
-  <button (click)="factura()">Generar Factura</button>
+
 </header>
+<div style="background-color: aqua;">
+  <h1 style="size: 30px;">Tiendas Pacheco</h1>
 <div>
   <p><img src="https://tiaecuador.vtexassets.com/arquivos/ids/198445/135295000B.png?v=637923097494930000" width="25%"></p>
   <p>Audifonos con Microfono negros Onikuma K5</p>
   <p [(ngModel)]="precio1">150</p>
-  <button (click)="agregar1()">Agregar al Carrito</button>
+  <button (click)="item1()">Agregar al Carrito</button>
+  <button (click)="limpiar1()">Borrar</button>
 
+</div>
+<div>
+  <p><img src="https://marcimex.vtexassets.com/arquivos/ids/188566/34716---CELULAR-NV_XIAOMI_NOTE-11-128GB_GRAY.png?v=637903812514300000" width="25%"></p>
+  <p>Celular Xiami Note 11 Pro Gray</p>
+  <p>Precio $500</p>
+  <button (click)="item2()">Agregar al Carrito</button>
+  <button (click)="limpiar2()">Borrar</button>
+</div>
+<div>
+  <p><img src="https://cdn.shopify.com/s/files/1/2625/1596/products/Teclado-_-mouse-gamer-wb-550_800x.png?v=1608739650"></p>
+  <p>Teclado Gamer</p>
+  <p>Precio $200</p>
+  <button (click)="item3()">Agregar al carrito</button>
+  <button (click)="limpiar3()">Borrar</button>
+</div>
 </div>
 
